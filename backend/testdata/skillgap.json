@@ -1,0 +1,190 @@
+[
+  {
+    "skillId": "9ebc4f61-dc6b-4192-b3a4-46726d185eb7",
+    "userId": "1d2abf13-2731-4a7b-a296-14b5bef1a0b4",
+    "username": "",
+    "email": "",
+    "currentRole": "Junior Software Engineer",
+    "targetRole": "AI Engineer",
+    "skills": {
+      "Kubernetes": 5,
+      "TypeScript": 5
+    },
+    "skillGaps": [
+      {
+        "skill": "Python",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Machine Learning Fundamentals",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "SQL",
+        "requiredLevel": 7
+      }
+    ],
+    "roleAlignment": "MISALIGNED",
+    "resumePath": "9ebc4f61-dc6b-4192-b3a4-46726d185eb7/resume.pdf",
+    "status": "COMPLETED",
+    "createdAt": "2026-07-07T12:34:58.093385Z"
+  },
+  {
+    "skillId": "a7f84523-93a8-4eb5-ab02-22874dd0574b",
+    "userId": "73731cd8-06fe-419a-9ae9-3f12fbdd489f",
+    "username": "",
+    "email": "",
+    "currentRole": "Associate Software Engineer",
+    "targetRole": "Frontend Developer",
+    "skills": {
+      "AI": 2,
+      "Docker": 2,
+      "Python": 2,
+      "JavaScript": 3,
+      "Data Science": 3,
+      "Special Needs Care": 8,
+      "Healthcare Coordination": 6,
+      "Early Childhood Development": 8,
+      "Financial Assistance Programs": 5
+    },
+    "skillGaps": [
+      {
+        "skill": "HTML/CSS",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "JavaScript (Advanced)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Frontend Framework (e.g., React, Angular, Vue.js)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Version Control (Git)",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Responsive Design",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "API Integration (RESTful APIs)",
+        "requiredLevel": 7
+      }
+    ],
+    "roleAlignment": "MISALIGNED",
+    "resumePath": "a7f84523-93a8-4eb5-ab02-22874dd0574b/resume.pdf",
+    "status": "COMPLETED",
+    "createdAt": "2026-07-07T12:39:10.521632Z"
+  },
+  {
+    "skillId": "e617801a-191f-47d2-97ab-a74f511feae7",
+    "userId": "1268fb87-a060-4023-8e32-f9f8c805a6ff",
+    "username": "",
+    "email": "",
+    "currentRole": "Senior Software Developer",
+    "targetRole": "Principal Engineer",
+    "skills": {
+      "AWS": 7,
+      "Docker": 6,
+      "Python": 6,
+      "Kubernetes": 7
+    },
+    "skillGaps": [
+      {
+        "skill": "System Design",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Technical Leadership",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Advanced Data Stores",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "CI/CD & Infrastructure as Code",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Python",
+        "requiredLevel": 8
+      }
+    ],
+    "roleAlignment": "MISALIGNED",
+    "resumePath": "e617801a-191f-47d2-97ab-a74f511feae7/resume.pdf",
+    "status": "COMPLETED",
+    "createdAt": "2026-07-07T12:50:28.211916Z"
+  },
+  {
+    "skillId": "78b18443-5820-4925-91c4-7d4f05ed1899",
+    "userId": "1268fb87-a060-4023-8e32-f9f8c805a6ff",
+    "username": "",
+    "email": "",
+    "currentRole": "Junior Software Engineer",
+    "targetRole": "Full Stack Developer",
+    "skills": {
+      "AI": 5,
+      "LLM": 5,
+      "SQL": 5,
+      "React": 5,
+      "Python": 5,
+      "MongoDB": 5,
+      "JavaScript": 5,
+      "Data Science": 5,
+      "Client Management": 7,
+      "Records Management": 3,
+      "Special Needs Care": 8,
+      "Elementary Education": 7,
+      "Early Childhood Development": 8
+    },
+    "skillGaps": [
+      {
+        "skill": "JavaScript",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "React",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "HTML",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "CSS",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Python",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "SQL",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "MongoDB",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Git",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Backend Frameworks (e.g., Django/Express.js)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "API Design (RESTful APIs)",
+        "requiredLevel": 7
+      }
+    ],
+    "roleAlignment": "MISALIGNED",
+    "resumePath": "78b18443-5820-4925-91c4-7d4f05ed1899/resume.pdf",
+    "status": "COMPLETED",
+    "createdAt": "2026-07-07T12:52:28.009338Z"
+  }
+]

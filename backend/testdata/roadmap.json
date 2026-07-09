@@ -1,0 +1,298 @@
+{
+  "roadmap_id": "feeeef3c-c044-4dd4-af75-fd2e1c7233a5",
+  "user_id": "73731cd8-06fe-419a-9ae9-3f12fbdd489f",
+  "skill_id": "a7f84523-93a8-4eb5-ab02-22874dd0574b",
+  "target_role": "Frontend Developer",
+  "status": "active",
+  "plan": {
+    "summary": "This 12-week roadmap focuses on building a strong foundation in API understanding, security, and backend architecture, which are crucial for effective frontend development and integration. Due to the available course catalogue, direct frontend framework, HTML/CSS, and advanced JavaScript courses are not included.",
+    "total_weeks": 12,
+    "weeks": [
+      {
+        "week": 1,
+        "focus": "Introduction to building RESTful APIs with FastAPI, focusing on core concepts and basic implementation.",
+        "skills": [
+          "FastAPI",
+          "REST APIs"
+        ],
+        "courses": [
+          {
+            "course_id": "a9745653-7560-4939-aa7b-f1be8c9c3fe4",
+            "course_name": "FastAPI: Modern Python Web Framework",
+            "provider": "TestDriven.io",
+            "url": "https://testdriven.io/courses/fastapi/",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Set up a FastAPI development environment.",
+          "Build a simple 'Hello World' API endpoint.",
+          "Understand request and response models using Pydantic."
+        ]
+      },
+      {
+        "week": 2,
+        "focus": "Deep dive into FastAPI features, including path parameters, query parameters, and dependency injection.",
+        "skills": [
+          "FastAPI",
+          "REST APIs",
+          "Async Python"
+        ],
+        "courses": [
+          {
+            "course_id": "a9745653-7560-4939-aa7b-f1be8c9c3fe4",
+            "course_name": "FastAPI: Modern Python Web Framework",
+            "provider": "TestDriven.io",
+            "url": "https://testdriven.io/courses/fastapi/",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Implement CRUD operations for a simple resource (e.g., items, users).",
+          "Utilize dependency injection for common functionalities.",
+          "Explore asynchronous operations within FastAPI."
+        ]
+      },
+      {
+        "week": 3,
+        "focus": "Advanced FastAPI topics, including error handling, middleware, and an introduction to testing APIs.",
+        "skills": [
+          "FastAPI",
+          "REST APIs",
+          "Pydantic"
+        ],
+        "courses": [
+          {
+            "course_id": "a9745653-7560-4939-aa7b-f1be8c9c3fe4",
+            "course_name": "FastAPI: Modern Python Web Framework",
+            "provider": "TestDriven.io",
+            "url": "https://testdriven.io/courses/fastapi/",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Implement custom error handlers for API exceptions.",
+          "Add middleware for request processing (e.g., logging).",
+          "Write basic unit tests for API endpoints."
+        ]
+      },
+      {
+        "week": 4,
+        "focus": "Understanding API security fundamentals, focusing on OAuth 2.0 concepts and grant types.",
+        "skills": [
+          "API Security",
+          "OAuth 2.0",
+          "Authentication"
+        ],
+        "courses": [
+          {
+            "course_id": "b8a057e1-16c1-4b20-820f-8f524622d724",
+            "course_name": "API Security: OAuth 2.0 and OpenID Connect",
+            "provider": "Pluralsight",
+            "url": "https://www.pluralsight.com/courses/oauth-2-openid-connect",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Differentiate between authentication and authorization.",
+          "Analyze various OAuth 2.0 grant types and their use cases.",
+          "Understand the role of access tokens and refresh tokens."
+        ]
+      },
+      {
+        "week": 5,
+        "focus": "Exploring OpenID Connect, JSON Web Tokens (JWT), and best practices for securing APIs.",
+        "skills": [
+          "OpenID Connect",
+          "JWT",
+          "API Security",
+          "Authentication"
+        ],
+        "courses": [
+          {
+            "course_id": "b8a057e1-16c1-4b20-820f-8f524622d724",
+            "course_name": "API Security: OAuth 2.0 and OpenID Connect",
+            "provider": "Pluralsight",
+            "url": "https://www.pluralsight.com/courses/oauth-2-openid-connect",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Understand the flow of OpenID Connect for user authentication.",
+          "Decode and inspect JWT tokens to understand their structure.",
+          "Identify common API security vulnerabilities and mitigation strategies."
+        ]
+      },
+      {
+        "week": 6,
+        "focus": "Foundations of relational databases with PostgreSQL, including basic SQL and database design.",
+        "skills": [
+          "PostgreSQL",
+          "SQL Optimization"
+        ],
+        "courses": [
+          {
+            "course_id": "358b6d31-5224-47ec-bbf3-01a270f3201c",
+            "course_name": "PostgreSQL for Backend Developers",
+            "provider": "Udemy",
+            "url": "https://www.udemy.com/course/postgresql-for-backend-developers",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Install and configure PostgreSQL locally.",
+          "Create a new database and tables with appropriate data types.",
+          "Perform basic CRUD operations using SQL queries."
+        ]
+      },
+      {
+        "week": 7,
+        "focus": "Advanced SQL techniques, including joins, subqueries, and an introduction to indexing for performance.",
+        "skills": [
+          "PostgreSQL",
+          "SQL Optimization",
+          "Indexing"
+        ],
+        "courses": [
+          {
+            "course_id": "358b6d31-5224-47ec-bbf3-01a270f3201c",
+            "course_name": "PostgreSQL for Backend Developers",
+            "provider": "Udemy",
+            "url": "https://www.udemy.com/course/postgresql-for-backend-developers",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Write complex queries involving multiple table joins.",
+          "Utilize subqueries to retrieve specific data sets.",
+          "Understand the concept of indexing and create indexes on tables."
+        ]
+      },
+      {
+        "week": 8,
+        "focus": "Database transactions, data integrity, and basic performance tuning strategies in PostgreSQL.",
+        "skills": [
+          "PostgreSQL",
+          "Transactions",
+          "SQL Optimization"
+        ],
+        "courses": [
+          {
+            "course_id": "358b6d31-5224-47ec-bbf3-01a270f3201c",
+            "course_name": "PostgreSQL for Backend Developers",
+            "provider": "Udemy",
+            "url": "https://www.udemy.com/course/postgresql-for-backend-developers",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Implement transactions to ensure data consistency.",
+          "Enforce data integrity using constraints.",
+          "Analyze query plans to identify performance bottlenecks."
+        ]
+      },
+      {
+        "week": 9,
+        "focus": "Introduction to Redis for caching and understanding its role in improving application performance.",
+        "skills": [
+          "Redis",
+          "Caching"
+        ],
+        "courses": [
+          {
+            "course_id": "90e42046-f190-4248-a743-1409e918d2cf",
+            "course_name": "Redis for Real-Time Applications",
+            "provider": "Udemy",
+            "url": "https://www.udemy.com/course/redis-for-real-time-applications",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Install and interact with Redis using the command-line interface.",
+          "Implement basic caching patterns for frequently accessed data.",
+          "Understand different Redis data structures (strings, hashes, lists)."
+        ]
+      },
+      {
+        "week": 10,
+        "focus": "Exploring Redis's Pub/Sub capabilities for real-time features and session management.",
+        "skills": [
+          "Redis",
+          "Pub/Sub",
+          "Session Management",
+          "Real-time Systems"
+        ],
+        "courses": [
+          {
+            "course_id": "90e42046-f190-4248-a743-1409e918d2cf",
+            "course_name": "Redis for Real-Time Applications",
+            "provider": "Udemy",
+            "url": "https://www.udemy.com/course/redis-for-real-time-applications",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Build a simple real-time messaging system using Redis Pub/Sub.",
+          "Implement session management using Redis.",
+          "Compare different caching strategies and their trade-offs."
+        ]
+      },
+      {
+        "week": 11,
+        "focus": "Introduction to microservices architecture, understanding its principles and benefits for scalable applications.",
+        "skills": [
+          "Microservices"
+        ],
+        "courses": [
+          {
+            "course_id": "6dbff635-63a1-4b0f-bcd7-b5eb40f7a755",
+            "course_name": "Designing Microservices with Django, Flask, and FastAPI",
+            "provider": "Udemy",
+            "url": "https://www.udemy.com/course/designing-microservices-with-django-flask-and-fastapi",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Differentiate between monolithic and microservices architectures.",
+          "Identify key characteristics of a microservices system.",
+          "Understand service communication patterns (e.g., synchronous vs. asynchronous)."
+        ]
+      },
+      {
+        "week": 12,
+        "focus": "Exploring advanced microservices concepts such as API gateways, service discovery, and deployment considerations.",
+        "skills": [
+          "Microservices",
+          "API Gateways"
+        ],
+        "courses": [
+          {
+            "course_id": "6dbff635-63a1-4b0f-bcd7-b5eb40f7a755",
+            "course_name": "Designing Microservices with Django, Flask, and FastAPI",
+            "provider": "Udemy",
+            "url": "https://www.udemy.com/course/designing-microservices-with-django-flask-and-fastapi",
+            "duration_hours": null,
+            "skills_taught": []
+          }
+        ],
+        "activities": [
+          "Understand the role of API gateways in a microservices setup.",
+          "Discuss strategies for service discovery and load balancing.",
+          "Consider deployment challenges and solutions for microservices."
+        ]
+      }
+    ]
+  },
+  "created_at": "2026-07-07T14:28:09.889243Z"
+}
