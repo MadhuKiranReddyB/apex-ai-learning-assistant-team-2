@@ -47,7 +47,7 @@ async def create_recommendation(
     return _to_roadmap_response(roadmap)
 
 
-@router.get("/employees/{employee_id}/roadmap", response_model=List[RoadmapResponse])
+@router.get("/employees/{employee_id}/roadmaps", response_model=List[RoadmapResponse])
 async def get_roadmaps_by_employee(
     employee_id: UUID,
     skill_id: Optional[UUID] = Query(
