@@ -2,7 +2,7 @@ from uuid import UUID
 from typing import List, Optional
 
 from app.core.supabase_client import get_async_supabase
-from app.core.exceptions import DatabaseException
+from app.core.exceptions import DatabaseException, ConnectionException
 
 ROADMAP_TABLE = "roadmaps"
 
@@ -23,6 +23,9 @@ class RoadmapRepository:
                 .execute()
             )
         except Exception as exc:
+            error_msg = str(exc).lower()
+            if any(keyword in error_msg for keyword in ['connection', 'timeout', 'network', 'credential', 'auth']):
+                raise ConnectionException(f"Failed to connect to database: {str(exc)}") from exc
             raise DatabaseException(f"Failed to fetch roadmaps for user {user_id}: {str(exc)}") from exc
         return result.data or []
 
@@ -39,6 +42,9 @@ class RoadmapRepository:
                 .execute()
             )
         except Exception as exc:
+            error_msg = str(exc).lower()
+            if any(keyword in error_msg for keyword in ['connection', 'timeout', 'network', 'credential', 'auth']):
+                raise ConnectionException(f"Failed to connect to database: {str(exc)}") from exc
             raise DatabaseException(f"Failed to fetch roadmap for user {user_id}: {str(exc)}") from exc
         data = result.data
         return data[0] if data else None
@@ -59,6 +65,9 @@ class RoadmapRepository:
                 .execute()
             )
         except Exception as exc:
+            error_msg = str(exc).lower()
+            if any(keyword in error_msg for keyword in ['connection', 'timeout', 'network', 'credential', 'auth']):
+                raise ConnectionException(f"Failed to connect to database: {str(exc)}") from exc
             raise DatabaseException(
                 f"Failed to fetch roadmap for user {user_id} and skill {skill_id}: {str(exc)}"
             ) from exc
@@ -71,5 +80,8 @@ class RoadmapRepository:
         try:
             result = await sb.table(ROADMAP_TABLE).insert(data).select("*, user_skill_details(current_role)").execute()
         except Exception as exc:
+            error_msg = str(exc).lower()
+            if any(keyword in error_msg for keyword in ['connection', 'timeout', 'network', 'credential', 'auth']):
+                raise ConnectionException(f"Failed to connect to database: {str(exc)}") from exc
             raise DatabaseException(f"Failed to create roadmap: {str(exc)}") from exc
         return result.data[0]

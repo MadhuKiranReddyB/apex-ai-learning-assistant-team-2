@@ -17,6 +17,11 @@ class DatabaseException(AppException):
         super().__init__(status_code=500, detail=detail)
 
 
+class ConnectionException(AppException):
+    def __init__(self, detail: str = "A connection error occurred"):
+        super().__init__(status_code=503, detail=detail)
+
+
 class RoadmapNotFoundException(AppException):
     def __init__(self, employee_id: str):
         super().__init__(

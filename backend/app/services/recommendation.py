@@ -197,18 +197,15 @@ class RecommendationService:
 
         If ``skill_id`` is provided, returns only the most recent roadmap for that
         specific skill. Otherwise, returns all roadmaps for the user.
+        Returns an empty list if no roadmaps are found.
         """
         roadmap_repo = RoadmapRepository()
         if skill_id is not None:
             roadmap = await roadmap_repo.get_by_user_id_and_skill_id(user_id, skill_id)
-            if not roadmap:
-                raise RoadmapNotFoundException(f"No roadmap found for user {user_id} and skill {skill_id}")
-            return [roadmap]
+            return [roadmap] if roadmap else []
         else:
             roadmaps = await roadmap_repo.get_all_by_user_id(user_id)
-            if not roadmaps:
-                raise RoadmapNotFoundException(str(user_id))
-            return roadmaps
+            return roadmaps or []
 
 
 recommendation_service = RecommendationService()

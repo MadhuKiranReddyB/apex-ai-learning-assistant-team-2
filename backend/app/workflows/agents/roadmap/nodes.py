@@ -102,6 +102,11 @@ async def node_retrieve_courses(state: RoadmapState) -> dict:
         query_embedding = await gemini_client.embed_text(gap_text, task_type="retrieval_query")
     except Exception as exc:
         logger.error("Failed to generate embedding for skill gaps", exc_info=exc)
+        error_msg = str(exc).lower()
+        if any(keyword in error_msg for keyword in ['quota', 'credit', 'limit', 'billing', '429', 'exceeded', 'resource exhausted', 'rate limit', 'out of quota', 'insufficient quota', 'daily limit', 'monthly limit']):
+            raise LLMException(
+                "Google API quota exceeded. Please check your Gemini API key credits and billing."
+            ) from exc
         raise LLMException(
             "Failed to generate embedding for skill gaps. Check GEMINI_API_KEY and network connectivity."
         ) from exc
@@ -150,6 +155,11 @@ async def node_generate_plan(state: RoadmapState) -> dict:
         plan = response.model_dump(mode="json")
     except Exception as exc:
         logger.error("Failed to generate roadmap plan", exc_info=exc)
+        error_msg = str(exc).lower()
+        if any(keyword in error_msg for keyword in ['quota', 'credit', 'limit', 'billing', '429', 'exceeded', 'resource exhausted', 'rate limit', 'out of quota', 'insufficient quota', 'daily limit', 'monthly limit']):
+            raise LLMException(
+                "Google API quota exceeded. Please check your Gemini API key credits and billing."
+            ) from exc
         return {"error": f"Failed to generate the roadmap plan: {exc}"}
 
     return {"llm_plan": plan}
