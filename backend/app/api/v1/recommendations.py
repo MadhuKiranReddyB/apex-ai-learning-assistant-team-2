@@ -35,6 +35,16 @@ def _to_roadmap_response(roadmap: dict) -> RoadmapResponse:
 @router.post("/skills/{skill_id}/roadmap", response_model=RoadmapResponse)
 async def create_recommendation(
     skill_id: UUID,
+    available_weeks: Optional[int] = Query(
+        default=None,
+        ge=1,
+        le=12,
+        description=(
+            "How many weeks the employee is available for. If provided, the "
+            "roadmap is compressed to fit within this many weeks, prioritising "
+            "the largest skill gaps. Defaults to up to 12 weeks."
+        ),
+    ),
 ) -> RoadmapResponse:
     """Generates and stores a week-by-week roadmap for a skill.
 
@@ -42,8 +52,10 @@ async def create_recommendation(
     skills and skill gaps) are read from ``user_skill_details``. Runs a vector
     search over the course catalogue, prompts Gemini to produce the plan, saves
     it, and returns the persisted roadmap.
+
+    Pass ``available_weeks`` to cap the roadmap length for busy employees.
     """
-    roadmap = await recommendation_service.generate(skill_id)
+    roadmap = await recommendation_service.generate(skill_id, available_weeks=available_weeks)
     return _to_roadmap_response(roadmap)
 
 

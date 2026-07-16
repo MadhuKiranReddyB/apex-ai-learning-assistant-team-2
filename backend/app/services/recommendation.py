@@ -129,12 +129,15 @@ class RecommendationService:
                     gaps.append({"skill": str(skill), "required_level": int(level)})
         return gaps
 
-    async def generate(self, skill_id: UUID) -> dict:
+    async def generate(self, skill_id: UUID, available_weeks: Optional[int] = None) -> dict:
         """Generates a week-by-week roadmap for a skill, stores it,
         and returns the persisted record.
 
         All inputs (user_id, current/target roles, skills and skill gaps) are
         read from ``user_skill_details`` using the provided ``skill_id``.
+
+        If ``available_weeks`` is given, the roadmap is compressed to fit within
+        that many weeks, prioritising the largest skill gaps.
         """
         skill_details = await self._get_skill_details(skill_id)
         user_id = UUID(skill_details["user_id"])
@@ -158,6 +161,7 @@ class RecommendationService:
             "target_role": target_role,
             "skills": skills,
             "skill_gaps": skill_gaps,
+            "available_weeks": available_weeks,
         }
 
         try:

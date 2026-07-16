@@ -20,18 +20,23 @@ Target role: {target_role}
 Existing skill levels (0-10):
 {skills_text}
 
-Skill gaps to close (target levels shown):
+Skill gaps to close (listed in PRIORITY order - most important first):
 {skill_gaps_text}
 
 Available courses in the catalogue (choose from these ONLY):
 {courses_text}
 
-Create a {max_weeks}-week learning roadmap. For each week, include:
+Create a learning roadmap of AT MOST {max_weeks} week(s). For each week, include:
 - "week_number"
 - "focus" (one sentence describing the week)
 - "skills_covered" (list of skills addressed)
 - "course_ids" (list of course_ids from the catalogue above)
 - "activities" (list of 2-3 practical exercises or milestones)
+
+Respect the priority order above: cover the highest-priority skill gaps first.
+If there is not enough time to cover every gap within {max_weeks} week(s), focus
+on the most important gaps and omit the least important ones rather than
+overloading a week. Do not exceed {max_weeks} week(s).
 
 Return the plan as JSON with a "summary" and "total_weeks" field at the top."""
 
