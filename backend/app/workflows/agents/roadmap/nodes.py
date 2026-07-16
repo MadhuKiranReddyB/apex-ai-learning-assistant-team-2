@@ -40,6 +40,21 @@ def _format_skill_gaps(skill_gaps: List[dict]) -> str:
     )
 
 
+def _rank_skill_gaps(skill_gaps: List[dict], skills: dict) -> List[dict]:
+    """Orders skill gaps by biggest gap first (required_level - current level).
+
+    When the roadmap is compressed into fewer weeks, listing the most important
+    gaps first lets the LLM prioritise them and omit the least important skills
+    instead of overloading each week.
+    """
+    def _gap_size(gap: dict) -> int:
+        required = gap.get("required_level") or 0
+        current = skills.get(gap.get("skill")) or 0
+        return int(required) - int(current)
+
+    return sorted(skill_gaps, key=_gap_size, reverse=True)
+
+
 def _format_skills(skills: dict) -> str:
     if not skills:
         return "No skill data provided"
@@ -112,13 +127,19 @@ async def node_generate_plan(state: RoadmapState) -> dict:
     llm = get_gemini_llm()
     structured_llm = llm.with_structured_output(RoadmapPlanSchema)
 
+    skills = state.get("skills") or {}
+    ranked_gaps = _rank_skill_gaps(state.get("skill_gaps", []), skills)
+
+    available_weeks = state.get("available_weeks")
+    max_weeks = MAX_WEEKS if not available_weeks else max(1, min(int(available_weeks), MAX_WEEKS))
+
     user_prompt = ROADMAP_USER_PROMPT_TEMPLATE.format(
         current_role=state.get("current_role") or "Unknown",
         target_role=state.get("target_role") or "Unknown",
-        skills_text=_format_skills(state.get("skills") or {}),
-        skill_gaps_text=_format_skill_gaps(state.get("skill_gaps", [])),
+        skills_text=_format_skills(skills),
+        skill_gaps_text=_format_skill_gaps(ranked_gaps),
         courses_text=_format_courses(candidate_courses),
-        max_weeks=MAX_WEEKS,
+        max_weeks=max_weeks,
     )
 
     try:

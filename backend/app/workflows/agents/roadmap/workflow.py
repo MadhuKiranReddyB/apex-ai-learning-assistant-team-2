@@ -96,6 +96,7 @@ class RoadmapWorkflow(BaseWorkflow):
             "target_role": input_data.get("target_role"),
             "skills": input_data.get("skills") or {},
             "skill_gaps": input_data.get("skill_gaps", []),
+            "available_weeks": input_data.get("available_weeks"),
             "candidate_courses": [],
             "llm_plan": None,
             "final_plan": None,
