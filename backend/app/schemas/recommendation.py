@@ -54,6 +54,7 @@ class RoadmapResponse(BaseModel):
     roadmap_id: UUID
     user_id: UUID
     skill_id: Optional[UUID] = None
+    current_role: Optional[str] = None
     target_role: Optional[str] = None
     status: str
     plan: RoadmapPlan

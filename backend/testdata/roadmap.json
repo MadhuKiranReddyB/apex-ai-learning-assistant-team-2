@@ -1,298 +1,154 @@
-{
-  "roadmap_id": "feeeef3c-c044-4dd4-af75-fd2e1c7233a5",
-  "user_id": "73731cd8-06fe-419a-9ae9-3f12fbdd489f",
-  "skill_id": "a7f84523-93a8-4eb5-ab02-22874dd0574b",
-  "target_role": "Frontend Developer",
-  "status": "active",
-  "plan": {
-    "summary": "This 12-week roadmap focuses on building a strong foundation in API understanding, security, and backend architecture, which are crucial for effective frontend development and integration. Due to the available course catalogue, direct frontend framework, HTML/CSS, and advanced JavaScript courses are not included.",
-    "total_weeks": 12,
-    "weeks": [
-      {
-        "week": 1,
-        "focus": "Introduction to building RESTful APIs with FastAPI, focusing on core concepts and basic implementation.",
-        "skills": [
-          "FastAPI",
-          "REST APIs"
-        ],
-        "courses": [
-          {
-            "course_id": "a9745653-7560-4939-aa7b-f1be8c9c3fe4",
-            "course_name": "FastAPI: Modern Python Web Framework",
-            "provider": "TestDriven.io",
-            "url": "https://testdriven.io/courses/fastapi/",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Set up a FastAPI development environment.",
-          "Build a simple 'Hello World' API endpoint.",
-          "Understand request and response models using Pydantic."
-        ]
-      },
-      {
-        "week": 2,
-        "focus": "Deep dive into FastAPI features, including path parameters, query parameters, and dependency injection.",
-        "skills": [
-          "FastAPI",
-          "REST APIs",
-          "Async Python"
-        ],
-        "courses": [
-          {
-            "course_id": "a9745653-7560-4939-aa7b-f1be8c9c3fe4",
-            "course_name": "FastAPI: Modern Python Web Framework",
-            "provider": "TestDriven.io",
-            "url": "https://testdriven.io/courses/fastapi/",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Implement CRUD operations for a simple resource (e.g., items, users).",
-          "Utilize dependency injection for common functionalities.",
-          "Explore asynchronous operations within FastAPI."
-        ]
-      },
-      {
-        "week": 3,
-        "focus": "Advanced FastAPI topics, including error handling, middleware, and an introduction to testing APIs.",
-        "skills": [
-          "FastAPI",
-          "REST APIs",
-          "Pydantic"
-        ],
-        "courses": [
-          {
-            "course_id": "a9745653-7560-4939-aa7b-f1be8c9c3fe4",
-            "course_name": "FastAPI: Modern Python Web Framework",
-            "provider": "TestDriven.io",
-            "url": "https://testdriven.io/courses/fastapi/",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Implement custom error handlers for API exceptions.",
-          "Add middleware for request processing (e.g., logging).",
-          "Write basic unit tests for API endpoints."
-        ]
-      },
-      {
-        "week": 4,
-        "focus": "Understanding API security fundamentals, focusing on OAuth 2.0 concepts and grant types.",
-        "skills": [
-          "API Security",
-          "OAuth 2.0",
-          "Authentication"
-        ],
-        "courses": [
-          {
-            "course_id": "b8a057e1-16c1-4b20-820f-8f524622d724",
-            "course_name": "API Security: OAuth 2.0 and OpenID Connect",
-            "provider": "Pluralsight",
-            "url": "https://www.pluralsight.com/courses/oauth-2-openid-connect",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Differentiate between authentication and authorization.",
-          "Analyze various OAuth 2.0 grant types and their use cases.",
-          "Understand the role of access tokens and refresh tokens."
-        ]
-      },
-      {
-        "week": 5,
-        "focus": "Exploring OpenID Connect, JSON Web Tokens (JWT), and best practices for securing APIs.",
-        "skills": [
-          "OpenID Connect",
-          "JWT",
-          "API Security",
-          "Authentication"
-        ],
-        "courses": [
-          {
-            "course_id": "b8a057e1-16c1-4b20-820f-8f524622d724",
-            "course_name": "API Security: OAuth 2.0 and OpenID Connect",
-            "provider": "Pluralsight",
-            "url": "https://www.pluralsight.com/courses/oauth-2-openid-connect",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Understand the flow of OpenID Connect for user authentication.",
-          "Decode and inspect JWT tokens to understand their structure.",
-          "Identify common API security vulnerabilities and mitigation strategies."
-        ]
-      },
-      {
-        "week": 6,
-        "focus": "Foundations of relational databases with PostgreSQL, including basic SQL and database design.",
-        "skills": [
-          "PostgreSQL",
-          "SQL Optimization"
-        ],
-        "courses": [
-          {
-            "course_id": "358b6d31-5224-47ec-bbf3-01a270f3201c",
-            "course_name": "PostgreSQL for Backend Developers",
-            "provider": "Udemy",
-            "url": "https://www.udemy.com/course/postgresql-for-backend-developers",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Install and configure PostgreSQL locally.",
-          "Create a new database and tables with appropriate data types.",
-          "Perform basic CRUD operations using SQL queries."
-        ]
-      },
-      {
-        "week": 7,
-        "focus": "Advanced SQL techniques, including joins, subqueries, and an introduction to indexing for performance.",
-        "skills": [
-          "PostgreSQL",
-          "SQL Optimization",
-          "Indexing"
-        ],
-        "courses": [
-          {
-            "course_id": "358b6d31-5224-47ec-bbf3-01a270f3201c",
-            "course_name": "PostgreSQL for Backend Developers",
-            "provider": "Udemy",
-            "url": "https://www.udemy.com/course/postgresql-for-backend-developers",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Write complex queries involving multiple table joins.",
-          "Utilize subqueries to retrieve specific data sets.",
-          "Understand the concept of indexing and create indexes on tables."
-        ]
-      },
-      {
-        "week": 8,
-        "focus": "Database transactions, data integrity, and basic performance tuning strategies in PostgreSQL.",
-        "skills": [
-          "PostgreSQL",
-          "Transactions",
-          "SQL Optimization"
-        ],
-        "courses": [
-          {
-            "course_id": "358b6d31-5224-47ec-bbf3-01a270f3201c",
-            "course_name": "PostgreSQL for Backend Developers",
-            "provider": "Udemy",
-            "url": "https://www.udemy.com/course/postgresql-for-backend-developers",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Implement transactions to ensure data consistency.",
-          "Enforce data integrity using constraints.",
-          "Analyze query plans to identify performance bottlenecks."
-        ]
-      },
-      {
-        "week": 9,
-        "focus": "Introduction to Redis for caching and understanding its role in improving application performance.",
-        "skills": [
-          "Redis",
-          "Caching"
-        ],
-        "courses": [
-          {
-            "course_id": "90e42046-f190-4248-a743-1409e918d2cf",
-            "course_name": "Redis for Real-Time Applications",
-            "provider": "Udemy",
-            "url": "https://www.udemy.com/course/redis-for-real-time-applications",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Install and interact with Redis using the command-line interface.",
-          "Implement basic caching patterns for frequently accessed data.",
-          "Understand different Redis data structures (strings, hashes, lists)."
-        ]
-      },
-      {
-        "week": 10,
-        "focus": "Exploring Redis's Pub/Sub capabilities for real-time features and session management.",
-        "skills": [
-          "Redis",
-          "Pub/Sub",
-          "Session Management",
-          "Real-time Systems"
-        ],
-        "courses": [
-          {
-            "course_id": "90e42046-f190-4248-a743-1409e918d2cf",
-            "course_name": "Redis for Real-Time Applications",
-            "provider": "Udemy",
-            "url": "https://www.udemy.com/course/redis-for-real-time-applications",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Build a simple real-time messaging system using Redis Pub/Sub.",
-          "Implement session management using Redis.",
-          "Compare different caching strategies and their trade-offs."
-        ]
-      },
-      {
-        "week": 11,
-        "focus": "Introduction to microservices architecture, understanding its principles and benefits for scalable applications.",
-        "skills": [
-          "Microservices"
-        ],
-        "courses": [
-          {
-            "course_id": "6dbff635-63a1-4b0f-bcd7-b5eb40f7a755",
-            "course_name": "Designing Microservices with Django, Flask, and FastAPI",
-            "provider": "Udemy",
-            "url": "https://www.udemy.com/course/designing-microservices-with-django-flask-and-fastapi",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Differentiate between monolithic and microservices architectures.",
-          "Identify key characteristics of a microservices system.",
-          "Understand service communication patterns (e.g., synchronous vs. asynchronous)."
-        ]
-      },
-      {
-        "week": 12,
-        "focus": "Exploring advanced microservices concepts such as API gateways, service discovery, and deployment considerations.",
-        "skills": [
-          "Microservices",
-          "API Gateways"
-        ],
-        "courses": [
-          {
-            "course_id": "6dbff635-63a1-4b0f-bcd7-b5eb40f7a755",
-            "course_name": "Designing Microservices with Django, Flask, and FastAPI",
-            "provider": "Udemy",
-            "url": "https://www.udemy.com/course/designing-microservices-with-django-flask-and-fastapi",
-            "duration_hours": null,
-            "skills_taught": []
-          }
-        ],
-        "activities": [
-          "Understand the role of API gateways in a microservices setup.",
-          "Discuss strategies for service discovery and load balancing.",
-          "Consider deployment challenges and solutions for microservices."
-        ]
-      }
-    ]
-  },
-  "created_at": "2026-07-07T14:28:09.889243Z"
-}
+[
+  {
+    "roadmap_id": "26c5595d-c339-4144-8206-e3f99b5b5afe",
+    "user_id": "02120dd4-9d27-4b79-8d4a-cbe52191a79a",
+    "skill_id": "b88f9d6e-2222-43a6-b084-51fbb40fe2ce",
+    "current_role": "Software Engineer",
+    "target_role": "AI Solution Architect",
+    "status": "active",
+    "plan": {
+      "summary": "This 6-week roadmap is designed to transition a Software Engineer to an AI Solution Architect by focusing on high-priority skill gaps. It emphasizes Python, core AI/ML concepts, cloud AI services (IBM Watson), machine learning frameworks, an introduction to LLMs and chatbots, AI solution architectures, and advanced SQL for data management, leveraging a curated selection of professional certificate modules.",
+      "total_weeks": 6,
+      "weeks": [
+        {
+          "week": 1,
+          "focus": "Build a strong foundation in Python programming and data manipulation, essential for AI/ML development.",
+          "skills": [
+            "Python Programming",
+            "Data Analysis",
+            "Pandas",
+            "Numpy"
+          ],
+          "courses": [
+            {
+              "course_id": "1be23a36-1fe3-4a5c-baf3-41a8176c5a53",
+              "course_name": "IBM Applied AI Professional Certificate",
+              "provider": "Coursera",
+              "url": "https://www.coursera.org/professional-certificates/applied-artifical-intelligence-ibm-watson-ai",
+              "duration_hours": null,
+              "skills_taught": []
+            }
+          ],
+          "activities": [
+            "Complete foundational Python programming exercises.",
+            "Practice data cleaning and basic analysis on a small dataset using Pandas.",
+            "Set up a Python development environment with necessary libraries."
+          ]
+        },
+        {
+          "week": 2,
+          "focus": "Grasp core AI and Machine Learning concepts and gain practical experience with a cloud-based AI platform (IBM Watson).",
+          "skills": [
+            "Artificial Intelligence (AI)",
+            "Machine Learning",
+            "Deep Learning",
+            "Application Programming Interfaces (API)",
+            "watson",
+            "Watson AI"
+          ],
+          "courses": [
+            {
+              "course_id": "1321a901-1d73-478a-972a-48d2b310ee99",
+              "course_name": "Getting Started with AI using IBM Watson",
+              "provider": "Coursera",
+              "url": "https://www.coursera.org/learn/ai-with-ibm-watson",
+              "duration_hours": null,
+              "skills_taught": []
+            }
+          ],
+          "activities": [
+            "Utilize IBM Watson APIs to build a simple AI service (e.g., sentiment analysis).",
+            "Identify common AI/ML use cases in various industries.",
+            "Explore the ethical considerations in AI development."
+          ]
+        },
+        {
+          "week": 3,
+          "focus": "Explore advanced Machine Learning techniques and understand the basics of common ML frameworks.",
+          "skills": [
+            "Machine Learning",
+            "Deep Learning",
+            "Application development"
+          ],
+          "courses": [],
+          "activities": [
+            "Implement a supervised learning model (e.g., classification or regression).",
+            "Understand the basic architecture of neural networks.",
+            "Evaluate model performance using appropriate metrics."
+          ]
+        },
+        {
+          "week": 4,
+          "focus": "Understand the principles behind Large Language Models through practical chatbot development and an introduction to prompt engineering.",
+          "skills": [
+            "Artificial Intelligence (AI)",
+            "Chatbot",
+            "Web Application",
+            "Application development",
+            "Flask",
+            "Prompt Engineering"
+          ],
+          "courses": [],
+          "activities": [
+            "Develop a simple rule-based or intent-driven chatbot.",
+            "Experiment with prompt variations to guide AI responses effectively.",
+            "Deploy a basic web application for the chatbot using Flask."
+          ]
+        },
+        {
+          "week": 5,
+          "focus": "Learn to design robust AI solutions, considering cloud-native architectures, microservices, and containerization for deployment.",
+          "skills": [
+            "Cloud Computing",
+            "Cloud Native",
+            "Software Architecture",
+            "Microservices",
+            "Containers",
+            "Kubernetes",
+            "Representational State Transfer (REST)"
+          ],
+          "courses": [
+            {
+              "course_id": "45a6dc48-5a68-4b9b-bee9-4edacb55e45d",
+              "course_name": "IBM DevOps and Software Engineering Professional Certificate",
+              "provider": "Coursera",
+              "url": "https://www.coursera.org/professional-certificates/devops-and-software-engineering",
+              "duration_hours": null,
+              "skills_taught": []
+            }
+          ],
+          "activities": [
+            "Sketch an architectural diagram for a scalable AI application.",
+            "Research best practices for deploying ML models in a cloud environment.",
+            "Understand the role of APIs and microservices in AI solution integration."
+          ]
+        },
+        {
+          "week": 6,
+          "focus": "Strengthen SQL skills, focusing on data manipulation and pipeline concepts crucial for feeding and managing data for AI systems.",
+          "skills": [
+            "SQL",
+            "Relational Database Management System (RDBMS)",
+            "ETL & Data Pipelines"
+          ],
+          "courses": [
+            {
+              "course_id": "e37e4e34-6946-4c85-a7ab-afbc290423fd",
+              "course_name": "IBM Data Engineering Professional Certificate",
+              "provider": "Coursera",
+              "url": "https://www.coursera.org/professional-certificates/ibm-data-engineer",
+              "duration_hours": null,
+              "skills_taught": []
+            }
+          ],
+          "activities": [
+            "Write complex SQL queries for data extraction and transformation.",
+            "Outline a basic data pipeline for an AI project's data needs.",
+            "Practice database optimization techniques for large datasets."
+          ]
+        }
+      ]
+    },
+    "created_at": "2026-07-16T12:14:06.842762Z"
+  }
+]

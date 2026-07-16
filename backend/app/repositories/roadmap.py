@@ -17,7 +17,7 @@ class RoadmapRepository:
         try:
             result = await (
                 sb.table(ROADMAP_TABLE)
-                .select("*")
+                .select("*, user_skill_details(current_role)")
                 .eq("user_id", str(user_id))
                 .order("created_at", desc=True)
                 .execute()
@@ -32,7 +32,7 @@ class RoadmapRepository:
         try:
             result = await (
                 sb.table(ROADMAP_TABLE)
-                .select("*")
+                .select("*, user_skill_details(current_role)")
                 .eq("user_id", str(user_id))
                 .order("created_at", desc=True)
                 .limit(1)
@@ -51,7 +51,7 @@ class RoadmapRepository:
         try:
             result = await (
                 sb.table(ROADMAP_TABLE)
-                .select("*")
+                .select("*, user_skill_details(current_role)")
                 .eq("user_id", str(user_id))
                 .eq("skill_id", str(skill_id))
                 .order("created_at", desc=True)
@@ -66,10 +66,10 @@ class RoadmapRepository:
         return data[0] if data else None
 
     async def create(self, data: dict) -> dict:
-        """Inserts a new roadmap row and returns the persisted record."""
+        """Inserts a new roadmap row and returns the persisted record with joined user_skill_details."""
         sb = await get_async_supabase()
         try:
-            result = await sb.table(ROADMAP_TABLE).insert(data).execute()
+            result = await sb.table(ROADMAP_TABLE).insert(data).select("*, user_skill_details(current_role)").execute()
         except Exception as exc:
             raise DatabaseException(f"Failed to create roadmap: {str(exc)}") from exc
         return result.data[0]

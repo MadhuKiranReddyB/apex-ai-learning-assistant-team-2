@@ -21,10 +21,20 @@ router = APIRouter(tags=["Recommendations"])
 
 def _to_roadmap_response(roadmap: dict) -> RoadmapResponse:
     """Maps a persisted ``roadmaps`` row into the API response schema."""
+    # Extract current_role from the joined user_skill_details
+    user_skill_details = roadmap.get("user_skill_details")
+    if isinstance(user_skill_details, list) and user_skill_details:
+        user_skill_details = user_skill_details[0]
+    
+    current_role = None
+    if user_skill_details and isinstance(user_skill_details, dict):
+        current_role = user_skill_details.get("current_role")
+    
     return RoadmapResponse(
         roadmap_id=roadmap["roadmap_id"],
         user_id=roadmap["user_id"],
         skill_id=roadmap.get("skill_id"),
+        current_role=current_role,
         target_role=roadmap.get("target_role"),
         status=roadmap["status"],
         plan=RoadmapPlan.model_validate(roadmap.get("plan") or {}),
