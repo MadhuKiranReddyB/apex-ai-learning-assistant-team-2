@@ -16,6 +16,8 @@ class Settings(BaseSettings):
     ALLOWED_ORIGINS: list[str] = [
         "http://localhost:5173",   # Vite dev
         "http://localhost:3000",   # fallback dev
+       "http://172.16.20.97:5173",  # Network IP
+
     ]
 
     class Config:
